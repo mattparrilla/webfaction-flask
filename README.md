@@ -1,7 +1,7 @@
 #Flask Project Template For Webfaction Hosting Environment
-This repository is meant to provide a quick way to spin up Flask applications on Webfaction and is based off of [Aaron Presley's blog post](http://aaronpresley.com/deploying-a-flask-project-on-webfaction/). I'll rely heavily on that post for instructions and will only provide instruction where I deviate from his recipe.
+This repository is meant to provide a quick way to spin up Flask applications on Webfaction and is based off of [Aaron Presley's](https://twitter.com/AaronPresley) blog post. I'll rely heavily on that post for instructions and will only provide instruction where I deviate from his recipe.
 
-The project structure I've employed here is slighly different, but similar enough that if you get stuck along the way, you should refer to [his original blog post](http://aaronpresley.com/deploying-a-flask-project-on-webfaction/).
+The project structure I've employed here is slighly different, but similar enough that if you get stuck along the way, you should refer to [his original blog post](http://aaronpresley.com/deploying-a-flask-project-on-webfaction/) which is an excellent synthesis of a few snippets floating around out there.
 
 ## Steps
 1. Create a new application on Webfaction
