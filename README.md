@@ -5,21 +5,22 @@ The project structure I've employed here is slighly different, but similar enoug
 
 ## Steps
 1. Create a new application on Webfaction
-2. Edit `apache2/conf/httpd.conf` (see Step 3 of post)
-3. Clone project
+2. Setup your application as a website
+3. Edit `apache2/conf/httpd.conf` (see Step 3 of post)
+4. Clone project
     1. `cd ~/webapps/project_name`
     2. `git clone <YOUR PROJECT'S CLONE URL> app`
-4. Instantiate virtual environment and install dependencies
+5. Instantiate virtual environment and install dependencies
     1. `cd ~/webapps/project_name/app/`
     2. `virtualenv venv`
     3. `source venv/bin/activate`
     4. `pip install -r requirements.txt`
-5. Create `htdocs/index.py`
+6. Create `htdocs/index.py` (slightly modified from Step 6)
 
         import sys
 
         # Active your Virtual Environment, which I'm assuming you've already setup
-        activate_this='/home/username/webapps/app/venv/bin/activate.py'
+        activate_this='/home/username/webapps/application_name/app/venv/bin/activate_this.py'
         execfile(activate_this, dict(__file__=activate_this))
 
         # Appending our Flask project files
@@ -27,3 +28,5 @@ The project structure I've employed here is slighly different, but similar enoug
 
         # Launching our app
         from main import app as application
+
+7. Point your browser to your new webfaction website!
