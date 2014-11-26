@@ -30,3 +30,6 @@ The project structure I've employed here is slighly different, but similar enoug
         from main import app as application
 
 7. Point your browser to your new webfaction website!
+
+## `_config.py`
+To avoid exposing sensitive config data, I keep a copy of my current config file (with the sensitive data removed) in `_config.py`
