@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>Serverless Issue Creator</title>
+</head>
+<body>
+    <h1>Issue Creator for Serverless Issue Creator</h1>
+    <!--
+    <form action="http://127.0.0.1:8000" method="post">
+    -->
+    <form action="https://npgojr8lx3.execute-api.us-east-1.amazonaws.com/api/" method="post">
+        <input type="hidden" name="repo" value="REPOSITORY_NAME">
+        <input type="hidden" name="access_token_url" value="https://api.github.com/installations/199210/access_tokens">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="body">Body</label>
+            <textarea id="body" name="body" required></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Create Issue</button>
+        </div>
+    </form>
+</body>
+</html>
